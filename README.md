@@ -1,16 +1,16 @@
 # Z270X-UD3-macOS
-My configurations and files for macOS 10.12.5 with Z270X-UD3 and i7-6700K.
+My configurations and files for macOS 10.12.5 with Z270-HD3 and i7-6700K.
 
 ## Handwara
 * Intel Core i7-6700K
-* Gigabyte Z270X-UD3
+* Gigabyte Z270-HD3
 * DDR4-2400 16G (8G x 2)
 * 128GB AHCI SSD (Samsung 750 EVO) + 1TB HDD (WD-Blue)
 
 ## Installation
 * Install with UniBeast and MultiBeast.
   * Quick Start - UEFI
-  * Drivers - Audio - Realtek - ALC1220 && 100/200 Series Audio
+  * Drivers - Audio - Realtek - ALC887 && 100/200 Series Audio
   * Drivers - Misc - FakeSMC && Plugins && HWMonitor && NullCPUPowerManagement
   * Drivers - Network - Intel - IntelMausithernet v2.2.1d1
   * Drivers - USB - Increase Mac Port Limit 200 Series

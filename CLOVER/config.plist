@@ -206,6 +206,24 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>change 15 port limit to 26 in XHCI kext (100/200-series)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				g710////EA==
+				</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<data>
+				g710////Gw==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>10.12-SKL-1912000-4_displays</string>
 				<key>Disabled</key>
 				<false/>
@@ -238,7 +256,7 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>10.12-AppleHDA/Realtek ALC1220</string>
+				<string>10.9-10.12-AppleHDA/Realtek ALC887</string>
 				<key>Find</key>
 				<data>
 				ixnUEQ==
@@ -247,7 +265,7 @@
 				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
-				IBLsEA==
+				hwjsEA==
 				</data>
 			</dict>
 			<dict>
@@ -264,22 +282,6 @@
 				em1sLnps
 				</data>
 			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change 15 port limit to 26 in XHCI kext (100/200-series)</string>
-				<key>Find</key>
-				<data>
-				g710////EA==
-				</data>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
-				<key>Replace</key>
-				<data>
-				g710////Gw==
-				</data>
-			</dict>
 		</array>
 	</dict>
 	<key>RtVariables</key>
@@ -292,37 +294,35 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>09/22/2015</string>
+		<string>06/26/2017</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM171.88Z.0105.B00.1509221819</string>
+		<string>IM171.88Z.0106.B01.1706260138</string>
 		<key>Board-ID</key>
-		<string>Mac-65CE76090165799A</string>
+		<string>Mac-B809C3757DA9BB8D</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardType</key>
 		<integer>10</integer>
-		<key>BoardVersion</key>
-		<string>iMac17,1</string>
 		<key>ChassisAssetTag</key>
-		<string></string>
+		<string>iMac-Aluminum</string>
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>13</string>
+		<string>0x13</string>
 		<key>Family</key>
-		<string>iMac</string>
+		<string>iMac17,1</string>
 		<key>LocationInChassis</key>
 		<string>Part Component</string>
 		<key>Manufacturer</key>
 		<string>Apple Inc.</string>
+		<key>Mobile</key>
+		<false/>
 		<key>ProductName</key>
 		<string>iMac17,1</string>
 		<key>SerialNumber</key>
-		<string>C02S1***GG7L</string>
-		<key>Trust</key>
-		<false/>
+		<string>C02P****H2YQ</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

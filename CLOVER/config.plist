@@ -37,6 +37,19 @@
 					SERFRg==
 					</data>
 				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>Rename _DSM to XDSM</string>
+					<key>Find</key>
+					<data>
+					X0RTTQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WERTTQ==
+					</data>
+				</dict>
+
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>

@@ -1,5 +1,5 @@
 # Z270X-UD3-macOS
-My configurations and files for macOS 10.12.5 with Z270-HD3 and i7-6700K.
+My configurations and files for macOS 10.12.6 with Z270-HD3 and i7-6700K.
 
 ## Handwara
 * Intel Core i7-6700K
@@ -20,3 +20,7 @@ My configurations and files for macOS 10.12.5 with Z270-HD3 and i7-6700K.
 * Open `Clover Configurater` to customize SMBIOS for `iMac17,1`
 * Modify `/System/Library/Extensions/AppleGraphicsControl.kext/Contents/PlugIns/AppleGraphicsDevicePolicy.kext/Contents/Info.plist` to enable HDMI output.
 * Copy `config.plist` and other things in `CLOVER` into `/EFI/CLOVER`.
+
+## Tips
+
+- Remind to reinstall audio driver after you update system.

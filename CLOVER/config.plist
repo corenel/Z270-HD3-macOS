@@ -49,7 +49,6 @@
 					WERTTQ==
 					</data>
 				</dict>
-
 			</array>
 			<key>ReuseFFFF</key>
 			<false/>
@@ -185,12 +184,12 @@
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
+		<key>#FakeCPUID</key>
+		<string>0x0506E3</string>
 		<key>AppleRTC</key>
 		<true/>
 		<key>AsusAICPUPM</key>
 		<true/>
-		<key>FakeCPUID</key>
-		<string>0x0506E3</string>
 		<key>KernelCpu</key>
 		<false/>
 		<key>KernelHaswellE</key>
@@ -215,24 +214,6 @@
 				<key>Replace</key>
 				<data>
 				SW50ZXJuYWw=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>change 15 port limit to 26 in XHCI kext (100/200-series)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g710////EA==
-				</data>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
-				<key>Name</key>
-				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
-				<key>Replace</key>
-				<data>
-				g710////Gw==
 				</data>
 			</dict>
 			<dict>
@@ -293,6 +274,22 @@
 				<key>Replace</key>
 				<data>
 				em1sLnps
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>change 15 port limit to 30 in XHCI kext (200-series)</string>
+				<key>Find</key>
+				<data>
+				g72M/v//EA==
+				</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<data>
+				g72M/v//Hw==
 				</data>
 			</dict>
 		</array>

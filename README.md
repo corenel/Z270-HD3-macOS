@@ -1,10 +1,10 @@
 # Z270X-UD3-macOS
 My configurations and files for macOS 10.12.6 with Z270-HD3 and i7-6700K.
 
-## Handwara
+## Handware
 * Intel Core i7-6700K
 * Gigabyte Z270-HD3
-* DDR4-2400 16G (8G x 2)
+* DDR4-2400 16G (16G x 1)
 * 256 NVMe SSD (Samsung SM961) + 128GB AHCI SSD (Samsung 750 EVO) + 1TB HDD (WD-Blue)
 
 ## Installation

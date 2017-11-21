@@ -16,7 +16,7 @@
 				<false/>
 				<key>FiX_WAK_200000</key>
 				<false/>
-				<key>FixShutdown_0004</key>
+				<key>FixShutdown</key>
 				<true/>
 			</dict>
 			<key>Name</key>
@@ -40,6 +40,8 @@
 				<dict>
 					<key>Comment</key>
 					<string>Rename _DSM to XDSM</string>
+					<key>Disabled</key>
+					<false/>
 					<key>Find</key>
 					<data>
 					X0RTTQ==
@@ -47,6 +49,20 @@
 					<key>Replace</key>
 					<data>
 					WERTTQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
+					<string>change GFX0 to IGPU</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					R0ZYMA==
+					</data>
+					<key>Replace</key>
+					<data>
+					SUdQVQ==
 					</data>
 				</dict>
 			</array>
@@ -69,7 +85,7 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0</string>
+		<string>-v dart=0 kext-dev-mode=1</string>
 		<key>DefaultVolume</key>
 		<string>Macintosh HD</string>
 		<key>Legacy</key>
@@ -186,18 +202,18 @@
 	<dict>
 		<key>#FakeCPUID</key>
 		<string>0x0506E3</string>
+		<key>AppleIntelCPUPM</key>
+		<true/>
 		<key>AppleRTC</key>
 		<true/>
-		<key>AsusAICPUPM</key>
-		<true/>
 		<key>KernelCpu</key>
-		<false/>
-		<key>KernelHaswellE</key>
 		<false/>
 		<key>KernelLapic</key>
 		<false/>
 		<key>KernelPm</key>
 		<true/>
+		<key>KernelXCPM</key>
+		<false/>
 		<key>KextsToPatch</key>
 		<array>
 			<dict>
@@ -209,6 +225,8 @@
 				<data>
 				RXh0ZXJuYWw=
 				</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
 				<key>Name</key>
 				<string>AppleAHCIPort</string>
 				<key>Replace</key>
@@ -236,7 +254,63 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
+				<string>10.11.4+-SKL-port_0x5-DP2HDMI</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				AQUJAAAEAACHAQAA
+				</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AQUJAAAIAACHAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.11.4+-SKL-port_0x6-DP2HDMI</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				AgQKAAAEAACHAQAA
+				</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AgQKAAAIAACHAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>10.11.4+-SKL-port_0x7-DP2HDMI</string>
+				<key>Disabled</key>
+				<true/>
+				<key>Find</key>
+				<data>
+				AwYKAAAEAACHAQAA
+				</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
+				<key>Name</key>
+				<string>AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				AwYKAAAIAACHAQAA
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
 				<string>change 15 port limit to 30 in XHCI kext (200-series)</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				g72M/v//EA==
@@ -253,10 +327,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>10.12-AppleHDA/Realtek ALC...</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				ihnUEQ==
 				</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
@@ -267,10 +345,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>10.9-10.12-AppleHDA/Realtek ALC887</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				ixnUEQ==
 				</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
@@ -281,10 +363,14 @@
 			<dict>
 				<key>Comment</key>
 				<string>AppleHDA/Resources/xml&gt;zml</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				eG1sLnps
 				</data>
+				<key>MatchOS</key>
+				<string>10.12.x</string>
 				<key>Name</key>
 				<string>AppleHDA</string>
 				<key>Replace</key>
@@ -295,6 +381,8 @@
 			<dict>
 				<key>Comment</key>
 				<string>change 15 port limit to 30 in XHCI kext (200-series)</string>
+				<key>Disabled</key>
+				<false/>
 				<key>Find</key>
 				<data>
 				g710////EA==
@@ -315,7 +403,7 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x3</string>
+		<string>0x67</string>
 	</dict>
 	<key>SMBIOS</key>
 	<dict>
@@ -348,14 +436,14 @@
 		<key>ProductName</key>
 		<string>iMac17,1</string>
 		<key>SerialNumber</key>
-		<string>C02P4NEEH2YQ</string>
+		<string>C02P****H2YQ</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>
 	<key>SystemParameters</key>
 	<dict>
 		<key>InjectKexts</key>
-		<string>YES</string>
+		<string>Yes</string>
 		<key>InjectSystemID</key>
 		<true/>
 	</dict>

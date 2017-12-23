@@ -12,8 +12,64 @@
 			<false/>
 			<key>Fixes</key>
 			<dict>
-				<key>FixShutdown</key>
-				<true/>
+				<key>AddDTGP_0001</key>
+				<false/>
+				<key>AddHDMI_8000000</key>
+				<false/>
+				<key>AddIMEI_80000</key>
+				<false/>
+				<key>AddMCHC_0008</key>
+				<false/>
+				<key>AddPNLF_1000000</key>
+				<false/>
+				<key>DeleteUnused_400000</key>
+				<false/>
+				<key>FIX_ACST_4000000</key>
+				<false/>
+				<key>FIX_ADP1_800000</key>
+				<false/>
+				<key>FIX_INTELGFX_100000</key>
+				<false/>
+				<key>FIX_RTC_20000</key>
+				<false/>
+				<key>FIX_S3D_2000000</key>
+				<false/>
+				<key>FakeLPC_0020</key>
+				<false/>
+				<key>FiX_TMR_40000</key>
+				<false/>
+				<key>FiX_WAK_200000</key>
+				<false/>
+				<key>FixAirport_4000</key>
+				<false/>
+				<key>FixDarwin_0002</key>
+				<false/>
+				<key>FixDisplay_0100</key>
+				<false/>
+				<key>FixFirewire_0800</key>
+				<false/>
+				<key>FixHDA_8000</key>
+				<false/>
+				<key>FixHPET_0010</key>
+				<false/>
+				<key>FixIDE_0200</key>
+				<false/>
+				<key>FixIPIC_0040</key>
+				<false/>
+				<key>FixLAN_2000</key>
+				<false/>
+				<key>FixRegions_10000000</key>
+				<false/>
+				<key>FixSATA_0400</key>
+				<false/>
+				<key>FixSBUS_0080</key>
+				<false/>
+				<key>FixShutdown_0004</key>
+				<false/>
+				<key>FixUSB_1000</key>
+				<false/>
+				<key>NewWay_80000000</key>
+				<false/>
 			</dict>
 			<key>Name</key>
 			<string>DSDT.aml</string>
@@ -36,8 +92,6 @@
 				<dict>
 					<key>Comment</key>
 					<string>Rename HDAS to HDEF</string>
-					<key>Disabled</key>
-					<false/>
 					<key>Find</key>
 					<data>
 					SERBUw==
@@ -105,6 +159,20 @@
 				</dict>
 				<dict>
 					<key>Comment</key>
+					<string>Rename _DSM to XDSM</string>
+					<key>Disabled</key>
+					<false/>
+					<key>Find</key>
+					<data>
+					X0RTTQ==
+					</data>
+					<key>Replace</key>
+					<data>
+					WERTTQ==
+					</data>
+				</dict>
+				<dict>
+					<key>Comment</key>
 					<string>change GFX0 to IGPU</string>
 					<key>Disabled</key>
 					<false/>
@@ -141,7 +209,7 @@
 			</dict>
 		</array>
 		<key>HaltEnabler</key>
-		<true/>
+		<false/>
 		<key>SSDT</key>
 		<dict>
 			<key>DropOem</key>
@@ -149,16 +217,16 @@
 			<key>Generate</key>
 			<dict>
 				<key>CStates</key>
-				<true/>
+				<false/>
 				<key>PStates</key>
-				<true/>
+				<false/>
 			</dict>
 		</dict>
 	</dict>
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>dart=0 kext-dev-mode=1 -shikigva</string>
+		<string>-v dart=0 kext-dev-mode=1 -shikigva</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultLoader</key>
@@ -167,17 +235,14 @@
 		<string>LastBootedVolume</string>
 		<key>Legacy</key>
 		<string>PBR</string>
+		<key>Log</key>
+		<true/>
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
 		<integer>-1</integer>
 		<key>XMPDetection</key>
-		<string>Yes</string>
-	</dict>
-	<key>CPU</key>
-	<dict>
-		<key>UseARTFrequency</key>
-		<false/>
+		<string>NO</string>
 	</dict>
 	<key>Devices</key>
 	<dict>
@@ -199,9 +264,7 @@
 		<key>Audio</key>
 		<dict>
 			<key>Inject</key>
-			<string>7</string>
-			<key>ResetHDA</key>
-			<true/>
+			<string>1</string>
 		</dict>
 		<key>USB</key>
 		<dict>
@@ -213,23 +276,41 @@
 			<true/>
 		</dict>
 	</dict>
+	<key>DisableDrivers</key>
+	<array>
+		<string>Nothing</string>
+	</array>
 	<key>GUI</key>
 	<dict>
+		<key>Hide</key>
+		<array>
+			<string>Windows</string>
+			<string>\EFI\BOOT\BOOTX64.EFI</string>
+		</array>
+		<key>Language</key>
+		<string>en:0</string>
 		<key>Mouse</key>
 		<dict>
-			<key>DoubleClick</key>
-			<integer>500</integer>
 			<key>Enabled</key>
-			<false/>
-			<key>Mirror</key>
-			<false/>
+			<true/>
 			<key>Speed</key>
 			<integer>8</integer>
+		</dict>
+		<key>Scan</key>
+		<dict>
+			<key>Entries</key>
+			<true/>
+			<key>Legacy</key>
+			<string>First</string>
+			<key>Linux</key>
+			<false/>
+			<key>Tool</key>
+			<true/>
 		</dict>
 		<key>ScreenResolution</key>
 		<string>1920x1080</string>
 		<key>Theme</key>
-		<string>tonymacx86</string>
+		<string>BGM</string>
 	</dict>
 	<key>Graphics</key>
 	<dict>
@@ -274,9 +355,7 @@
 		<array>
 			<dict>
 				<key>Comment</key>
-				<string>External Drives as Internal to fix Orange Icons</string>
-				<key>Disabled</key>
-				<false/>
+				<string>External icons patch</string>
 				<key>Find</key>
 				<data>
 				RXh0ZXJuYWw=
@@ -306,38 +385,60 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change 15 port limit to 26</string>
-				<key>Disabled</key>
-				<false/>
+				<string>10.12-AppleHDA/Realtek ALC...</string>
 				<key>Find</key>
 				<data>
-				g710////EA==
+				ihnUEQ==
 				</data>
-				<key>MatchOS</key>
-				<string>10.12.x</string>
 				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
+				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
-				g710////Gw==
+				AAAAAA==
 				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>change 15 port limit to 26</string>
-				<key>Disabled</key>
-				<false/>
+				<string>10.9-10.12-AppleHDA/Realtek ALC887</string>
 				<key>Find</key>
 				<data>
-				g72M/v//EA==
+				ixnUEQ==
 				</data>
-				<key>MatchOS</key>
-				<string>10.11.x</string>
 				<key>Name</key>
-				<string>AppleUSBXHCIPCI</string>
+				<string>AppleHDA</string>
 				<key>Replace</key>
 				<data>
-				g72M/v//Gw==
+				hwjsEA==
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>AppleHDA/Resources/xml&gt;zml</string>
+				<key>Find</key>
+				<data>
+				eG1sLnps
+				</data>
+				<key>Name</key>
+				<string>AppleHDA</string>
+				<key>Replace</key>
+				<data>
+				em1sLnps
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>change 15 port limit to 26 in XHCI kext</string>
+				<key>Find</key>
+				<data>
+				g32MEA==
+				</data>
+				<key>MatchOS</key>
+				<string>10.13.x</string>
+				<key>Name</key>
+				<string>com.apple.driver.usb.AppleUSBXHCIPCI</string>
+				<key>Replace</key>
+				<data>
+				g32MGw==
 				</data>
 			</dict>
 		</array>
@@ -356,11 +457,11 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>08/08/2017</string>
+		<string>06/26/2017</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>IM171.88Z.0110.B00.1708080012</string>
+		<string>IM171.88Z.0106.B01.1706260138</string>
 		<key>Board-ID</key>
 		<string>Mac-B809C3757DA9BB8D</string>
 		<key>BoardManufacturer</key>
@@ -376,7 +477,7 @@
 		<key>ChassisManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>ChassisType</key>
-		<string>0x09</string>
+		<string>0x13</string>
 		<key>Family</key>
 		<string>iMac17,1</string>
 		<key>FirmwareFeatures</key>
@@ -394,7 +495,7 @@
 		<key>ProductName</key>
 		<string>iMac17,1</string>
 		<key>SerialNumber</key>
-		<string>C02P****H2YQ</string>
+		<string>C02P4NEEH2YQ</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

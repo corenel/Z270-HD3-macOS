@@ -14,10 +14,11 @@ For configuration w/o GPU, please look at [this release](https://github.com/core
 * Install with UniBeast (8.1.0) and `CLOVER_INSTALL` ([Tutorial](http://hackintosher.com/guides/high-sierra-install-full-guide/)).
 * Modify `/System/Library/Extensions/AppleGraphicsControl.kext/Contents/PlugIns/AppleGraphicsDevicePolicy.kext/Contents/Info.plist` to enable HDMI output.
 * Copy `CLOVER` into `/EFI/CLOVER`.
-* Install NVIDIA Web Driver ([Tutorial](http://hackintosher.com/guides/properly-install-nvidia-drivers-high-sierra-10-13/)
+* Install NVIDIA Web Driver ([Tutorial](http://hackintosher.com/guides/properly-install-nvidia-drivers-high-sierra-10-13/))
 * Restart and Enjpy!
 
 ## Tips
 
 - Remind to reinstall audio driver after you update system.
 - Remind to rebuild kext cache after installing or uninstalling kext files.
+- Once updating or restoring system, remember to enable SIP and reinstall NVIDIA Web Driver.

@@ -1,14 +1,14 @@
 # Z270X-UD3-macOS
-My configurations and files for macOS 10.13.2 with Z270-HD3 and i7-6700K.
+My configurations and files for macOS 10.13.4 with Z270-HD3 and i7-6700K.
 
-## Handware
+## Hardware
 * Intel Core i7-6700K
 * Gigabyte Z270-HD3
 * DDR4-2400 16G (16G x 1)
 * 256 NVMe SSD (Samsung SM961) + 128GB AHCI SSD (Samsung 750 EVO) + 1TB HDD (WD-Blue)
 * Gigabyte GTX1080Ti
 
-## Installation
+## Installation w/ GPU
 For configuration w/o GPU, please look at [this release](https://github.com/corenel/Z270-HD3-macOS/releases/tag/10.13.2).
 
 * Install with UniBeast (8.1.0) and `CLOVER_INSTALL` ([Tutorial](http://hackintosher.com/guides/high-sierra-install-full-guide/)).

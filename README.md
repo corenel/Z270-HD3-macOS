@@ -1,5 +1,5 @@
 # Z270X-UD3-macOS
-My configurations and files for macOS 10.13.4 with Z270-HD3 and i7-6700K.
+My configurations and files for macOS 10.13.6 with Z270-HD3 and i7-6700K.
 
 ## Hardware
 * Intel Core i7-6700K

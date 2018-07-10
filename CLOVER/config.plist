@@ -226,13 +226,13 @@
 	<key>Boot</key>
 	<dict>
 		<key>Arguments</key>
-		<string>-v dart=0 kext-dev-mode=1 -shikioff</string>
+		<string>-v dart=0 kext-dev-mode=1 -shikivga</string>
 		<key>Debug</key>
 		<false/>
 		<key>DefaultLoader</key>
 		<string>boot.efi</string>
 		<key>DefaultVolume</key>
-		<string>LastBootedVolume</string>
+		<string>Macintoish HD</string>
 		<key>Legacy</key>
 		<string>PBR</string>
 		<key>Log</key>
@@ -240,7 +240,7 @@
 		<key>Secure</key>
 		<false/>
 		<key>Timeout</key>
-		<integer>-1</integer>
+		<integer>10</integer>
 		<key>XMPDetection</key>
 		<string>NO</string>
 	</dict>
@@ -448,7 +448,7 @@
 		<key>BooterConfig</key>
 		<string>0x28</string>
 		<key>CsrActiveConfig</key>
-		<string>0x67</string>
+		<string>0x00</string>
 		<key>MLB</key>
 		<string>C02032109R5DC771H</string>
 		<key>ROM</key>
@@ -495,7 +495,7 @@
 		<key>ProductName</key>
 		<string>iMac17,1</string>
 		<key>SerialNumber</key>
-		<string>C02P***H2YQ</string>
+		<string>C02P****H2YQ</string>
 		<key>Version</key>
 		<string>1.0</string>
 	</dict>

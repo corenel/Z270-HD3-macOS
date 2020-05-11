@@ -1,4 +1,7 @@
 # Z270X-UD3-macOS
+
+> This repo is no longer maintained, since I have switched to [NUCi7BEH Hackintosh](https://github.com/corenel/NUC8i7BEH-macOS).
+
 My configurations and files for macOS 10.13.6 with Z270-HD3 and i7-6700K.
 
 ## Hardware
